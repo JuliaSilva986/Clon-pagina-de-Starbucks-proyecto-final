@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Clon pagina de Starbucks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-div">
+        <nav>
+            <ul class="encabezado-izquierda">
+                <li><a href="https://www.starbucks.com.mx/"><img src="./img/Starbucks-logo.jpg" alt="Logo de Starbucks"></a></li>
+                <li><a class="DeskV" href="./menu.html">MENU</a></li>
+                <li><a class="DeskV" href="./rewards.html">REWARDS</a></li>
+            </ul>
+            <ul  class="encabezado-derecha">
+                <li><a id="localizar" href="https://www.starbucks.com.mx/stores"><i class="fa-solid fa-location-dot"></i> Localizar Tienda</a></li>
+                <li><a href="./iniciar.html"><button class="boton-1" type="button">Ingresar</button></li></a>
+                <li><a href="./unete.html"><button class="boton-2" type="button">Únete</button></li></a>
+            </ul>
+            <svg class="mobileV" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4"><path fill-rule="evenodd" d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" /></svg>
+        </nav>
+    </header>
+    <main>
+        <div class="main-div">
+            <section class="seccion-izquierda-1">
+                <div class="seccion-izquierda-2">
+                    <h1>Registro</h1>
+                </div>
+            </section>
+            <section class="seccion-derecha-1">
+                <div class="seccion-derecha-2">
+                    <div class="form-container2">
+                        <!-- Formulario de inicio de sesión -->
+                        <form>
+                            <div class="titleform"><h2>Información personal</h2><p>(*) campos obligatorios</p></div>
+                            <p>¡Regístrate y comienza a vivir la experiencia Starbucks Rewards™!</p>
+                            <label for="Nombre(s)"><span style="color: red;">*</span> Nombre(s)</label>
+                            <input type="Nombre(s)" id="Nombre(s)" placeholder="Nombre(s)">
+                            <label for="Apellido paterno"><span style="color: red;">*</span> Apellido paterno</label>
+                            <input type="Apellido" id="Apellido" placeholder="Apellido paterno">
+                            <label for="Email"><span style="color: red;">*</span> Email</label>
+                            <input type="Email" id="Email" placeholder="Email">               
+                            <label for="Confirmar Email"><span style="color: red;">*</span> Confirmar Email</label>
+                            <input type="Confirmar Email" id="Confirmar Email" placeholder="Confirmar Email">
+                            <label for="password"><span style="color: red;">*</span> Contraseña</label>
+                            <input type="password" id="password" placeholder="Contraseña">               
+                            <label for="password"><span style="color: red;">*</span> Confirmar Email</label>
+                            <input type="password" id="password" placeholder="Confirmar contraseña">
+                        </form>
+                    </div>
+                    <div class="form-container3">
+                        <!-- Fecha de Nacimiento -->
+                        <div class="birthday-section">
+                            <h4>Fecha de Nacimiento <span>(Opcional)</span></h4>
+                            <p>Agrega tu fecha de cumpleaños para otorgarte una bebida gratis en el mes de tu cumpleaños</p>
+                            <div class="select-wrapper">
+                                <select name="mes" id="mes">
+                                    <option value="" disabled selected>Mes</option>
+                                    <option value="Enero">Enero</option>
+                                    <option value="Febrero">Febrero</option>
+                                    <option value="Marzo">Marzo</option>
+                                    <option value="Abril">Abril</option>
+                                    <option value="Mayo">Mayo</option>
+                                    <option value="Junio">Junio</option>
+                                    <option value="Julio">Julio</option>
+                                    <option value="Agosto">Agosto</option>
+                                    <option value="Septiembre">Septiembre</option>
+                                    <option value="Octubre">Octubre</option>
+                                    <option value="Noviembre">Noviembre</option>
+                                    <option value="Diciembre">Diciembre</option>
+                                </select>
+                                <select name="dia" id="dia">
+                                    <option value="" disabled selected>Día</option>
+                                    <!-- Días del 1 al 31 -->
+                                    <script>
+                                        for (let i = 1; i <= 31; i++) {
+                                            document.write(`<option value="${i}">${i}</option>`);
+                                        }
+                                    </script>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Ingreso a Starbucks Rewards -->
+                        <div class="rewards-section">
+                            <div>
+                            <h2>Ingresa a Starbucks Rewards</h2>
+                            <p>Únete a Starbucks Rewards™ y disfruta de beneficios especiales.</p>
+                            <label>
+                                <input type="radio" name="card" checked>
+                                Quiero recibir una Starbucks Card digital instantánea
+                            </label>
+                            <label>
+                                <input type="radio" name="card">
+                                Quiero unirme con una Starbucks Card que ya tengo
+                            </label>
+                        </div>
+                        </div>
+
+                        <!-- Términos y Condiciones -->
+                        <div class="terms-section">
+                            <div>
+                            <h3>Términos y Condiciones</h3>
+                            <label>
+                                <input type="checkbox" name="promociones">
+                                Deseo recibir novedades sobre productos y promociones
+                            </label>
+                            <label>
+                                <input type="checkbox" name="acepto">
+                                Acepto los <a href="#">Términos y Condiciones</a> y <a href="#">Aviso de Privacidad</a>
+                            </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="login-btn">Registrame</button>
+                    </div>
+                    <div class="black-diver">
+                        <h2>¡SER PARTE DE STARBUCKS REWARDS™ ES MUY FÁCIL!</h2>
+                    </div>
+                    <section class="footer-div">
+                        <section class="penultima-seccion-div">
+                            <div >
+                                <p id="letra-negra-div">Sobre nosotros</p>
+                                <p>Historias Starbucks</p>
+                            </div>
+                            <div >
+                                <p id="letra-negra-div">Atención al cliente</p>
+                                <p>Contáctanos</p>
+                                <p>Facturas Electrónicas</p>
+                                <p>Formas de comprar</p>
+                            </div>
+                        </section>
+                    <section class="footer-div">
+                        <ul class="lista-redes-div">
+                        <li><a href="https://www.facebook.com/StarbucksMexico"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                        <li><a href="https://www.instagram.com/starbucksMex/"><i class="fa-brands fa-square-instagram fa-2x"></i></a></li>
+                        <li><a href="https://x.com/StarbucksMex"><i class="fa-brands fa-square-x-twitter fa-2x"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/StarbucksMexico?app=desktop"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+                        </ul>
+                        <div class="pie-de-pagina-1-div">
+                            <a href="#">Accesibilidad Web    |</a>
+                            <a href="#">Aviso de Privacidad      |</a>
+                            <a href="#">Boletines      |</a>
+                            <a href="#">Condiciones de uso     |</a>
+                            <a href="#">Mapa del sitio       |</a>
+                            <a href="#">Preferencias sobre cookies</a>
+            
+                        </div>
+                        <div class="pie-de-pagina-2-div">
+                            <span>Ⓒ 2024. Starbucks Cofee Company. Reservados todos los derechos</span>
+                            <span id="ultima-linea">mx | prod | 37c7fa28000666934de2111bcbafca3e92df535f | 29/11/2024-05:51:24:113</span>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+</body>
+</html>
